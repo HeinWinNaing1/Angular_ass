@@ -1,0 +1,45 @@
+<div class="box">
+<h2 class="text-center text-primary">Angular Assignment</h2>
+<div class="row my-3">
+  <div class="col-2">
+    <label for="username">username:</label>
+
+  </div>
+  <div class="col-10">
+    <!-- <input class="form form-control" type="text" id="username" name="username" #username> -->
+    <input class="form form-control" type="text" id="username" name="username" [(ngModel)]="name">
+  </div>
+</div>
+<div class="row mb-3">
+  <!-- <button class="btn btn-primary"
+  (click)="onsubmit(username.value)"
+  >
+  Submit
+  </button> -->
+  <button class="btn btn-primary"
+  (click)="onsubmit()"
+  >
+  Submit
+  </button>
+</div>
+<div class="row mb-3">
+  <!-- <button class="btn btn-danger"
+  (click)="reset(username.value ='')"
+  >
+  Reset
+  </button> -->
+  <button class="btn btn-danger"
+  (click)="reset()"
+  >
+  Reset
+  </button>
+</div>
+<div class="row mb-3">
+ <h1 class="text-center text-primary">{{username}}</h1>
+
+</div>
+</div>
+
+
+
+
